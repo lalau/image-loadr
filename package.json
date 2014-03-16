@@ -1,0 +1,32 @@
+{
+    "name": "image-loadr",
+    "version": "0.0.1",
+    "description": "Asynchronous image loader",
+    "main": "index.js",
+    "scripts": {
+        "test": "istanbul cover --dir coverage tests/*.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ktslwy/image-loadr"
+    },
+    "keywords": [
+        "image",
+        "asset",
+        "loader",
+        "asynchronous"
+    ],
+    "author": "Lawrence Lau <ktslwy@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ktslwy/image-loadr/issues"
+    },
+    "homepage": "https://github.com/ktslwy/image-loadr",
+    "dependencies": {
+    },
+    "devDependencies": {
+        "htmlimage": "~1.0.2",
+        "istanbul": "~0.2.6",
+        "tap": "~0.4.8"
+    }
+}
