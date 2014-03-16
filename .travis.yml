@@ -1,3 +1,8 @@
- language: node_js
- node_js:
-   - "0.10"
+node_js: 
+- "0.10"
+language: node_js
+deploy: 
+  provider: npm
+  email: ktslwy@gmail.com
+  api_key: 
+    secure: jzqQUEZOwLFHNHJqhyFIrrMwpkn6HTTcMg9Gk8W0B5kfH7Q7i4UxiSbEkUCTQokv/OqwKMqTCFFRyyuliV/f73OwXpyzm41Zz2ioBRKidedL5iofZ2nlxiHOiy5gsTk/S+u5ZUOj3eEQRxAHB3Vz8caRAe5k+xNl7RK8//ms8d8=
