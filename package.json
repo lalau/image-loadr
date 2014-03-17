@@ -31,7 +31,11 @@
     "testling": {
         "files": "tests/*.js",
         "browsers": [
-            "chrome/22..latest"
+            "chrome/22..latest",
+            "chrome/canary",
+            "firefox/16..latest",
+            "firefox/nightly",
+            "iexplore/9..latest",
         ]
     }
 }
