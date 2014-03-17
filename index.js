@@ -74,7 +74,7 @@ ImageLoadr.prototype._onImageObjectLoad = function(imageObject, status) {
     if (self._hasCompleted()) {
         for (key in objects) {
             if (objects[key]) {
-                delete objects[key].id;
+                try { delete objects[key].id; } catch (e) {}
             }
         }
         if (typeof onComplete === "function") {

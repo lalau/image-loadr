@@ -1,10 +1,11 @@
 "use strict";
 
-var test        = require("tap").test,
-    ImageLoadr  = require("../index"),
-    Image       = require("htmlimage").Image;
+if (!global.Function.prototype.bind) {
+    global.Function.prototype.bind = require("function-bind");
+}
 
-global.Image = Image;
+var test        = require("tape"),
+    ImageLoadr  = require("../index");
 
 var imagesWithKeyUrl = [
     {key: "r1", url: "http://dummyimage.com/100"},
@@ -26,7 +27,14 @@ var imagesWithError = [
 
 test("loads images", function(t) {
 
+    if (!global.Image) {
+        t.end();
+        return;
+    }
+
     test("with key and url", function(t){
+
+        t.plan(3);
 
         var imageLoadr = new ImageLoadr(imagesWithKeyUrl, {
             onComplete: function(imageObjects) {
@@ -43,6 +51,8 @@ test("loads images", function(t) {
 
     test("with url only", function(t){
 
+        t.plan(3);
+
         var imageLoadr = new ImageLoadr(imagesWithUrl, {
             onComplete: function(imageObjects) {
                 imagesWithUrl.forEach(function(image){
@@ -57,6 +67,8 @@ test("loads images", function(t) {
     });
 
     test("handles error", function(t) {
+
+        t.plan(3);
 
         var imageLoadr = new ImageLoadr(imagesWithError, {
             onComplete: function(imageObjects) {
