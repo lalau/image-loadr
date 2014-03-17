@@ -1,5 +1,8 @@
-image-loadr [![Build Status](https://travis-ci.org/ktslwy/image-loadr.png?branch=master)](https://travis-ci.org/ktslwy/image-loadr) [![NPM version](https://badge.fury.io/js/image-loadr.png)](http://badge.fury.io/js/image-loadr) [![browser support](https://ci.testling.com/ktslwy/image-loadr.png)](https://ci.testling.com/ktslwy/image-loadr)
+image-loadr
 ===========
+[![Build Status](https://travis-ci.org/ktslwy/image-loadr.png?branch=master)](https://travis-ci.org/ktslwy/image-loadr) [![NPM version](https://badge.fury.io/js/image-loadr.png)](http://badge.fury.io/js/image-loadr)
+
+[![browser support](https://ci.testling.com/ktslwy/image-loadr.png)](https://ci.testling.com/ktslwy/image-loadr)
 
 `image-loadr` is an asynchronous image loader used to load a list of images designated by their urls and made their `Image` objects available in the callback given to it. The main purpose of this module is to preload the images and continue with the logic going to apply on the image objects.
 
