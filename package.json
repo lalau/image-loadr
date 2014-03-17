@@ -4,7 +4,7 @@
     "description": "Asynchronous image loader",
     "main": "index.js",
     "scripts": {
-        "test": "node ./tests/image-loadr.js"
+        "test": "node ./tests/node/image-loadr.js"
     },
     "repository": {
         "type": "git",
@@ -26,10 +26,11 @@
     },
     "devDependencies": {
         "function-bind": "~0.1.0",
-        "tape": "~2.10.2"
+        "tape": "~2.10.2",
+        "htmlimage": "~1.0.2"
     },
     "testling": {
-        "files": "tests/*.js",
+        "files": "tests/image-loadr.js",
         "browsers": [
             "android-browser/4.2..latest",
             "chrome/22..latest",
