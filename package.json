@@ -4,7 +4,7 @@
     "description": "Asynchronous image loader",
     "main": "index.js",
     "scripts": {
-        "test": "jshint * && node ./tests/node/image-loadr.js"
+        "test": "./node_modules/.bin/jshint * && node ./tests/node/image-loadr.js"
     },
     "repository": {
         "type": "git",
@@ -27,7 +27,8 @@
     "devDependencies": {
         "function-bind": "~0.1.0",
         "tape": "~2.10.2",
-        "htmlimage": "~1.0.2"
+        "htmlimage": "~1.0.2",
+        "jshint": "~2.4.4"
     },
     "testling": {
         "files": "tests/image-loadr.js",
