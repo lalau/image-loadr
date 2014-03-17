@@ -4,7 +4,7 @@
     "description": "Asynchronous image loader",
     "main": "index.js",
     "scripts": {
-        "test": "node ./tests/node/image-loadr.js"
+        "test": "jshint * && node ./tests/node/image-loadr.js"
     },
     "repository": {
         "type": "git",

@@ -36,16 +36,15 @@ ImageLoadr.prototype._createImageObject = function(image) {
     var self    = this,
         key     = image.key || image.url,
         results = self._results,
-        imageObject,
-        handler;
+        imageObject;
 
     imageObject = new Image();
     imageObject.id = key;
 
-    imageObject.onload = self._onImageObjectLoad.bind(self, imageObject, 'loaded');
-    imageObject.onerror = self._onImageObjectLoad.bind(self, imageObject, 'error');
+    imageObject.onload = self._onImageObjectLoad.bind(self, imageObject, "loaded");
+    imageObject.onerror = self._onImageObjectLoad.bind(self, imageObject, "error");
     if (imageObject.on) {
-        imageObject.on('error', function(){});
+        imageObject.on("error", function(){});
     }
 
     results[key] = {

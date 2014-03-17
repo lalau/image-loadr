@@ -1,5 +1,5 @@
 "use strict";
 
-global.Image = require('htmlimage').Image;
+global.Image = require("htmlimage").Image;
 
-require('../image-loadr');
+require("../image-loadr");
